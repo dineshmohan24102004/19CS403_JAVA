@@ -1,16 +1,24 @@
 # Ex.No:4(A)  JAVA CONSTRUCTOR
 ## AIM:
-To create a Java program using constructor to print the circumference of rectangle.[l=5,w=6]
+To create an Employee class with attributes name, age, and degree, initialize these attributes using a constructor, and display the employee details using a method.
 
 ## ALGORITHM :
-1.  1.	Start the Program.
-2.	Define a class `circum`
-3.	Inside the class, define two integer variables `l` and `w` with values 5 and 6, respectively
-4.	Create a constructor `circum()`:
--	a) Calculate the `circumference` as `2 * (l + w)`
--	b) Print the `circumference` twice with different labels ("Area of First Rectangle" and "Area of Second Rectangle")
-5.	In `main`, create an object `sc` of the `circum` class
-6.	End
+
+1.Start.
+
+2.Define a class named Employee.
+
+3.Declare instance variables name, age, and degn (degree).
+
+4.Create a parameterized constructor that accepts name, age, and degn and initializes the instance variables.
+
+5.Define a method display() to print the employee’s name, age, and degree.
+
+6.In the main method, create an Employee object by passing sample data.
+
+7.Call the display() method on the created object to show the details.
+
+8.End.
 
 
 
@@ -20,22 +28,43 @@ To create a Java program using constructor to print the circumference of rectang
  ```
 /*
 Program to implement a Constructor using Java
-Developed by: 
-RegisterNumber:  
+Developed by: Dinesh M
+RegisterNumber: 212222040039
+
+public class Employee
+{
+    String name;
+    int age;
+    String degn;
+    Employee(String name,int age,String degn){
+        this.name=name;
+        this.age=age;
+        this.degn=degn;
+    }
+    
+
+    void display()
+    {
+        System.out.println("Name is:"+name);
+        System.out.println("Age is:"+age);
+        System.out.println("Degree is:"+degn);
+        
+    }
+
+    public static void main(String[] args)
+    {
+        Employee e=new Employee("John",12,"VII");
+        e.display();
+    }
+}
+
 */
 ```
 
-## Sourcecode.java:
-
-
-
-
-
-
-
 ## OUTPUT:
+![Screenshot 2025-05-23 224228](https://github.com/user-attachments/assets/9dc6103e-439e-4060-b565-cab0a258c6c5)
 
 
 
 ## RESULT:
-Thus the Java program using constructor to print the circumference of rectangle was executed successfully.
+The program successfully creates an employee object with specified details and displays the name, age, and degree as output.
