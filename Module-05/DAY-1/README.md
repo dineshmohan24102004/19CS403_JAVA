@@ -1,22 +1,26 @@
 # Ex.No:5(A)  DATA HIDING AND ENCAPSULATION
 ## AIM:
-To Create a java program to display name and location of the employee and use the encapsulation concepts
+
+To demonstrate encapsulation in Java by creating a Person class with a private age variable and public getter and setter methods, and to use these methods to set and get the age value
 
 ## ALGORITHM :
-1.  Start the program
-2.	Define class `Employee`:
--	a) Declare two private `String` variables: `name1` and `name2`
--	b) Define `setname(String n1)` method to set `name1` to `n1`
--	c) Define `setname2(String n2)` method to set `name2` to `n2`
--	d) Define `get1()` method to return `name1`
--	e) Define `get2()` method to return `name2`
-3.	Define `Main` class with `main` method:
--	a) Create `Scanner` object `sc` for input
--	b) Read `name1` and `name2` from user input
--	c) Create ` Employee ` object `hl`
--	d) Use `hl.setname(name1)` and `hl.setname2(name2)` to set the names
--	e) Print the values of `hl.get1()` and `hl.get2()`
-4.	End
+1.Start.
+
+2.Create a class Person with a private integer variable age.
+
+3.Define a public method setAge(int age) to assign a value to age.
+
+4.Define a public method getAge() to return the value of age.
+
+5.In the main method, create a Scanner object to take input from the user.
+
+6.Create an object p1 of the Person class.
+
+7.Read the age input from the user and set it using the setAge() method.
+
+8.Retrieve the age using the getAge() method and display it.
+
+9.End.
 
 
 
@@ -26,22 +30,36 @@ To Create a java program to display name and location of the employee and use th
  ```
 /*
 Program to implement a Data Hiding & Encapsulation using Java
-Developed by: 
-RegisterNumber:  
+Developed by: Dinesh M
+RegisterNumber: 212222040039
+
+import java.util.*;
+class Person {
+  private int age;
+  public int getAge() {
+    return age;
+  }
+  public void setAge(int age) {
+    this.age = age;
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    Person p1 = new Person();
+    p1.setAge(sc.nextInt());
+    System.out.println("My age is " + p1.getAge());
+  }
+}
 */
 ```
-
-## Sourcecode.java:
-
-
-
-
-
 
 
 ## OUTPUT:
 
+![Screenshot 2025-05-23 225734](https://github.com/user-attachments/assets/d830044a-f383-40c2-ad12-ae561ef5b854)
 
 
 ## RESULT:
-Thus , the  java program to display name and location of the employee and use the encapsulation concepts executed successfully.
+The program successfully encapsulates the age variable in the Person class and allows controlled access through getter and setter methods. It reads the age input from the user and correctly displays it.
