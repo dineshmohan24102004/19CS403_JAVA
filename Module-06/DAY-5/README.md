@@ -1,35 +1,76 @@
 # Ex.No:6(E)  MULTIPLE INHERITANCE
 
 ## AIM:
-To write a Java program using multiple inheritance through interfaces to read student details and marks, calculate the average, and display the mark sheet.
+To implement a Java program that demonstrates hierarchical inheritance and the use of constructors in a parent class (Animal) and its child classes (Dog and Cat).
 
 ## ALGORITHM :
 
-1.	Start the program.
-2.	Create interface Student:
-a.	Declare methods to read name and rollno.
-3.	Create interface Studentdet:
-a.	Declare a method to read marks of 6 subjects and calculate the average.
-b.	Create a class Studentdetails that implements both interfaces:
-c.	Define variables for name, roll number, marks array, and average.
-4.	Implement all methods from the interfaces.
-a.	Create a display() method to show student details and average.
-5.	In main() method:
-a.	Create an object of Studentdetails.
-b.	Call the methods to get input and display results.
-6.	End the program.
+1.Start.
+
+2.Create a base class Animal with a constructor that prints "Animal is the Base Class".
+
+3.Create a class Dog that extends Animal:
+
+4.Call super() in its constructor to invoke the Animal constructor.
+
+5.Print "Dog is the Derived Class of Animal".
+
+6.Create another class Cat that also extends Animal:
+
+7.Call super() in its constructor to invoke the Animal constructor.
+
+8.Print "Cat is the Derived Class of Animal".
+
+9.In the main method:
+
+Create an object of Dog, which invokes both the Animal and Dog constructors.
+
+Create an object of Cat, which invokes both the Animal and Cat constructors.
+
+10.End.
+
+
 
 
 ## PROGRAM:
  ```
 /*
 Program to implement a Multiple Inheritance
-Developed by: 
-RegisterNumber:  
+Developed by: Dinesh M
+RegisterNumber:  212222040039
+
+
+class Animal {
+
+    public Animal() {
+        System.out.println("Animal is the Base Class");
+    }
+}
+
+class Dog extends Animal {
+
+    public Dog() {
+        super();
+        System.out.println("Dog is the Derived Class of Animal");
+    }
+}
+class Cat extends Animal {
+    public Cat() {
+        super();
+        System.out.println("Cat is the Derived Class of Animal");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog dog = new Dog();
+        Cat cat = new Cat();
+    }
+}
+
 */
 ```
 
-## Sourcecode.java:
 
 
 
@@ -38,9 +79,10 @@ RegisterNumber:
 
 
 ## OUTPUT:
+![Screenshot 2025-05-23 233040](https://github.com/user-attachments/assets/9e7ca841-c68f-4978-8949-83e8d948236d)
 
 
 
 ## RESULT:
 
-Thus, the java program demonstrates multiple inheritance using interfaces and successfully displays the mark sheet of a student by collecting personal and academic data. 
+The program successfully demonstrates hierarchical inheritance in Java, where multiple child classes (Dog, Cat) inherit from a common parent class (Animal), and their constructors invoke the parent constructor using super().
