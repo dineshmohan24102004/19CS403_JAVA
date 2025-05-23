@@ -12,7 +12,7 @@ To create a class named 'Student' with String variable 'name' and String variabl
 6.	Define the 'main' method within the 'Test' class
 7.	Create an object 'obj' of the 'Student' class
 8.	Print the value of 'name' and 'address' variables of the 'obj' object
-9.	End
+9.	En
 
 
 
