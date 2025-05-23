@@ -1,22 +1,30 @@
 # Ex.No:2(C)    SINGLE ARRAY
 
 ## AIM:
-To create a java program to read 5 values and display the all 5 values from array using single dimensional array.
+To write a Java program to calculate the sum of elements in an array.
 
 ## ALGORITHM :
-1.	Start the program.
-2.	2.	Import the `Scanner` class from the `java.util` package
-3.	Define a class named `ArrayExample`
-4.	Inside the `main` method:
--	a) Create a `Scanner` object called `scanner` to take user input
--	b) Declare an integer array `values` of size 5
--	c) Use a `for` loop to iterate from `i = 0` to `i < 5`:
--   d) Take input from the user and store it in `values[i]`
-5.	Print "Elements in Array are :"
-6.	Use another `for` loop to iterate from `i = 0` to `i < 5`:
--	a) Print each element in `values` followed by a space
-7.	Close the `scanner` to release resources
-8.	End
+1.Start the program.
+
+2.Create a Scanner object to read input from the user.
+
+3.Read the number of elements n in the array.
+
+4.Declare an array arr of size n.
+
+5.Use a loop to input n elements from the user into the array.
+
+6.Initialize a variable sum to 0.
+
+7.Traverse the array using a loop:
+
+8.For each element, add it to sum.
+
+9.Print the total sum.
+
+10.End the program.
+
+
 
 
 
@@ -26,24 +34,38 @@ To create a java program to read 5 values and display the all 5 values from arra
  ```
 /*
 Program to implement a Single Array using Java
-Developed by: 
-RegisterNumber:  
+Developed by: Dinesh M
+RegisterNumber: 212222040039
+
+ import java.util.*;
+public class sum{
+    public static void printSum(){
+        int sum=0;
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] arr=new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        System.out.println("Sum of an array:");
+        for(int i=0;i<n;i++){
+            sum=sum+arr[i];
+        }
+        System.out.println(sum);
+    }
+    public static void main(String args[]){
+        printSum();
+    }
+}
 */
 ```
 
-## Sourcecode.java:
-
-
-
-
-
-
-
 ## OUTPUT:
 
+![Screenshot 2025-05-23 212146](https://github.com/user-attachments/assets/e16328aa-e053-4a36-9305-d4b811e8830a)
 
 
 ## RESULT:
-Thus, the Java program Thus the java program to read 5 values and display the all 5 values from array using single dimensional  was executed successfully.
+The program was successfully compiled and executed. It accurately computes the sum of all elements entered into the array.
 
 
