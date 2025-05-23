@@ -1,23 +1,24 @@
 # Ex.No:4(B) INTRODUCTION TO JAVA INHERITANCE
 
 ## AIM:
-To create  a Java program to perform the inheritance concept for employee details.
+To demonstrate single inheritance in Java by creating a base class Animal with methods eat and sleep, and a derived class Bird that inherits from Animal and adds a method fly. Then, call these methods to show inheritance.
+
+
 
 ## ALGORITHM :
-1.	Start the Program
-2.	Define class `Person`:
--	a) Declare `emp_id`, `name`, and `dept` as instance variables
-3.	Define class `Employee` that extends `Person`:
--	a) Define method `getDetails()`:
--	i) Create a `Scanner` object `sc`
--	ii) Read `name`, `emp_id`, and `dept` from user input
--	b) Define method `display()`:
--	i) Print the `name`, `emp_id`, and `dept`
-4.	Define `Main` class with `main` method:
--	a) Create an `Employee` object `emp`
--	b) Call `getDetails()` to input employee details
--	c) Call `display()` to output employee details
-5.	End
+1.Start.
+
+2.Define a base class Animal with two methods: eat() and sleep(), which print messages.
+
+3.Define a subclass Bird that extends the Animal class and adds a new method fly().
+
+4.In the main method of class Ans, create an object of Animal and call its methods eat() and sleep().
+
+5.Create an object of Bird and call the inherited methods eat(), sleep(), and its own method fly().
+
+6.Observe the output demonstrating inheritance.
+
+7.End.
 
 
 
@@ -30,23 +31,43 @@ To create  a Java program to perform the inheritance concept for employee detail
  ```
 /*
 Program to implement a Inheritance using Java
-Developed by: 
-RegisterNumber:  
+Developed by: Dinesh M
+RegisterNumber:  212222040039
+
+class Animal {
+    void eat() {
+        System.out.println("Calling get Method");
+    }
+
+    void sleep() {
+        System.out.println("Calling display Method");
+    }
+}
+
+class Bird extends Animal {
+    void fly() {
+        System.out.println("Calling process Method");
+    }
+}
+
+public class Ans {
+    public static void main(String[] args) {
+        Animal animalObj = new Animal();
+        animalObj.eat();
+        animalObj.sleep();
+        Bird birdObj = new Bird();
+        birdObj.eat();
+        birdObj.sleep();
+        birdObj.fly();
+    }
+}
 */
 ```
-
-## Sourcecode.java:
-
-
-
-
-
-
 
 ## OUTPUT:
 
 
 
 ## RESULT:
-Thus the Java program to implement the inheritance concept for employee details was  executed successfully.
+The program successfully demonstrates single inheritance where the Bird class inherits methods from the Animal class and adds its own method. The output shows calls to the base class methods and the subclass method as expected.
 
