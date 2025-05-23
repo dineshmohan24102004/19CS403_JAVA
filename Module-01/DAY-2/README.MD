@@ -68,5 +68,6 @@ public class Demo {
 C:\Users\SEC\Pictures\Screenshots\Screenshot 2025-05-23 201059.png
 
 
+
 ## RESULT:
 Thus, The program successfully matches the input with known small prime numbers using a switch and displays the correct word representation or an error message otherwise.
