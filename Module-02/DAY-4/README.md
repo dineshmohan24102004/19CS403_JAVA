@@ -1,20 +1,26 @@
 # Ex.No:2(D) MULTI-DIMENSIONAL ARRAY
 
 ## AIM:
-To create a java program that returns the sum of all the values in a 2D array.
+To write a Java program to demonstrate how primitive data types and arrays are passed to methods
 
 ## ALGORITHM :
-1.	Start the program.
-2.	Import `Scanner` and define class `sum`
-3.	In `main`:
--	a) Create `Scanner` object `sc`
--	b) Read `rows` and `cols` from user
--	c) Declare 2D array `arr[rows][cols]`
-4.	Populate `arr` using nested loops with user input
-5.	Initialize `sum` to `0`
-6.	Calculate the sum of all elements in `arr` using nested loops
-7.	Print "The sum of all values in the 2D array is: " + `sum`
-8.	End
+1.Start the program.
+
+2.Declare an integer variable x and initialize it with a value.
+
+3.Declare and initialize an integer array num.
+
+4.Call the method m1, passing x and num as arguments.
+
+5.Inside method m1:
+
+6.Assign a new value to x.
+
+7.Modify the second element of the array (num[1]).
+
+8.Return to main and print the values of x and num[1].
+
+9.End the program.
 
 
 
@@ -22,24 +28,33 @@ To create a java program that returns the sum of all the values in a 2D array.
  ```
 /*
 Program to implement a Multi Dimensional Array using Java
-Developed by: 
-RegisterNumber:  
+Developed by: Dinesh M
+RegisterNumber: 212222040039
+
+public class PassingArrays {
+public static void main(String[] args) 
+{
+  int x = 2; 
+  int[ ] num = {0, 1}; 
+   m1(x, num);
+   System.out.println("Value of x: " +x);
+   System.out.print("Value of num[1]: " +num[1]);
+ }
+public static void m1(int x, int[ ] num) 
+{
+   x = 5; 
+   num[1] = 20; 
+ }
+}
 */
 ```
 
-## Sourcecode.java:
-
-
-
-
-
-
-
 ## OUTPUT:
 
+![Screenshot 2025-05-23 212529](https://github.com/user-attachments/assets/8f5beed9-1633-4885-975c-0f012e733dd0)
 
 
 ## RESULT:
-Thus the java program that returns the sum of all the values in a 2D array was executed successfully.
+The program successfully demonstrates that primitive variables remain unchanged when passed to methods, whereas changes to array elements within methods affect the original array.
 
 
