@@ -1,49 +1,62 @@
 # Ex.No:4(D) FINAL & STATIC IN JAVA
 
 ## AIM:
-   To create a Java program to perform final & static keyword for below situation Employee object contains member 'Emp_Id'. It contains object named name, which contains its own informations such as Fname, Mname, Lname.
+To create a Java class with final instance variables, initialize them through a constructor, and display the student details including a fixed year of study.
  
 ## ALGORITHM :
-1.	Start the Program.
-2.	Define class `Name`:
--	a) Declare three `String` variables: `Fname`, `Mname`, and `Lname`
--	b) Define method `dispName(String fn, String mn, String ln)`:
--	i) Print the full name using the passed parameters `fn`, `mn`, and `ln`
-3.	Define class `Employee`:
--	a) Declare an integer variable `Emp_Id`
--	b) Create an instance of `Name` called `obj`
--	c) Define method `disp(int id)`:
--	i) Print the employee ID
--	ii) Create a new `Name` object and call `dispName("B", "Leo", "John")` to display the name
-4.	Define `Main` class with `main` method:
--	a) Create an `Employee` object `emp`
--	b) Call `emp.disp(101)` to display the employee details
-5.	End
+1.Start.
 
+2.Declare a class named Class with three private final variables: name, id, and year (initialized to "3th Year").
 
+3.Define a constructor that accepts name and id as parameters and initializes the respective variables.
 
+4.Create a method printDetails() to print the student’s ID, name, and year of study.
 
+5.In the main method, create an instance of Class by passing the student’s name and ID.
+
+6.Call the printDetails() method on the object to display the details.
+
+7.End.
 
 
 ## PROGRAM:
  ```
 /*
 Program to implement a final & Static using Java
-Developed by: 
-RegisterNumber:  
+Developed by: Dinesh M
+RegisterNumber: 212222040039
+
+public  class Class {
+
+    private final String name;
+    private final String id;
+    private final String year = "3th Year"; // Final variable with fixed value
+
+    public Class(String name, String id) {
+        this.name = name;
+        this.id = id;
+    }
+
+    public void printDetails() {
+        System.out.println("Student Details are,");
+        System.out.println("Id is " + id);
+        System.out.println("Name is " + name);
+        System.out.println("Year of Studying is " + year);
+    }
+
+    public static void main(String[] args) {
+        Class student = new Class("David", "S201");
+        student.printDetails();
+    }
+}
+
 */
 ```
-
-## Sourcecode.java:
-
-
-
-
-
 
 
 ## OUTPUT:
 
+![Screenshot 2025-05-23 225147](https://github.com/user-attachments/assets/0d6c3733-864c-4231-8537-ca382f243ea1)
 
 
 ## RESULT:
