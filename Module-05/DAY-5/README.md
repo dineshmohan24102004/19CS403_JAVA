@@ -1,19 +1,27 @@
 # Ex.No:5(E) HAS-A RELATIONSHIP
 ## AIM:
-To implement a  Java Program to Find the Largest or Max Number in Array using has - a relationship.
+
+To create a base class Calculation with methods for addition and subtraction, extend it with a subclass My_Calculation that adds multiplication, and demonstrate method calls from both classes.
 ## ALGORITHM :
-1.	Start the program.
-2.	Create a class ArrayData:
-a.	Declare an integer array and a variable for size.
-b.	Create a method to read array elements from the user.
-3.	Create another class ArrayOperation:
-a.	Create a method findMax() that accepts an ArrayData object.
-b.	Loop through the array and find the largest element.
-4.	In the main() method of a class Main:
-a.	Create an object of ArrayData and read the input.
-b.	Create an object of ArrayOperation and call findMax() by passing the ArrayData object.
-5.	Display the largest number.
-6.	End the program.
+1.Start.
+
+2.Define a class Calculation with an integer variable z.
+
+3.Implement a method addition(int x, int y) in Calculation that calculates and prints the sum of x and y.
+
+4.Implement a method Subtraction(int x, int y) in Calculation that calculates and prints the difference between x and y.
+
+5.Define a subclass My_Calculation that extends Calculation.
+
+6.Add a method multiplication(int x, int y) in My_Calculation that calculates and prints the product of x and y.
+
+7.In the main method, create an instance of My_Calculation.
+
+8.Call the inherited methods addition and Subtraction and the subclass method multiplication using the instance.
+
+9.End.
+
+
 
 
 
@@ -21,12 +29,40 @@ b.	Create an object of ArrayOperation and call findMax() by passing the ArrayDat
  ```
 /*
 Program to implement a HAS-A RelationShip
-Developed by: 
-RegisterNumber:  
+Developed by: Dinesh M
+RegisterNumber:  212222040039
+
+class Calculation {
+   int z;
+	
+   public void addition(int x, int y) {
+      z = x + y;
+      System.out.println("The sum of the given numbers:"+z);
+   }
+	
+   public void Subtraction(int x, int y) {
+      z = x - y;
+      System.out.println("The difference between the given numbers:"+z);
+   }
+}
+
+public class My_Calculation extends Calculation {
+   public void multiplication(int x, int y) {
+      z = x * y;
+      System.out.println("The product of the given numbers:"+z);
+   }
+	
+   public static void main(String args[]) {
+      int a = 20, b = 10;
+      My_Calculation demo = new My_Calculation();
+      demo.addition(a, b);
+      demo.Subtraction(a, b);
+      demo.multiplication(a, b);
+   }
+}
 */
 ```
 
-## Sourcecode.java:
 
 
 
@@ -35,9 +71,10 @@ RegisterNumber:
 
 
 ## OUTPUT:
+![Screenshot 2025-05-23 231110](https://github.com/user-attachments/assets/6bf15a8f-58e6-4038-b798-2112891c18a2)
 
 
 
 ## RESULT:
-Thus the java program to Find the Largest or Max Number in Array using has - a relationship was executed successfully. 
+The program successfully demonstrates inheritance by calling methods from the base class and subclass to perform addition, subtraction, and multiplication on given numbers, displaying the results accordingly.
 
