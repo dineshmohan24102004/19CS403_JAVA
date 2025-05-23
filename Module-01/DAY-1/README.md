@@ -56,5 +56,7 @@ RegisterNumber:212222040039
 
 
 
+
+
 ## RESULT:
 The program successfully created three fruit objects (obj1, obj2, and obj3) and assigned different values to their name, color, and weight attributes
