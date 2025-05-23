@@ -1,22 +1,22 @@
 # Ex.No:2(B) ACCESS MODIFIERS
 
 ## AIM:
-To develop a Java Program to display the addition number using private modifiers only.
+To write a Java program to print natural numbers from 1 to a given number n.
 
 ## ALGORITHM :
-1.	Start the program.
-2.	Define a class named `addition`
-3.	Declare two private integer variables, `num1` and `num2`
-4.	Define a private method `add()` that:
-a)	Returns the sum of `num1` and `num2`
-5.	Define a public method `display(int n1, int n2)` that:
-a)	Assigns `n1` to `num1` and `n2` to `num2`
-b)	Calls the `add()` method and prints the result using `System.out.println`
-6.	Define the `main` method as static
-a)	Create an instance of the `addition` class called `ad`
-b)	Call the `display(8, 9)` method on the `ad` object
-7.	End
+1.Start the program.
 
+2.Create a Scanner object to read input from the user.
+
+3.Declare an integer variable num.
+
+4.Read the value of num from the user.
+
+5.Use a for loop that starts from 1 and runs up to num:
+
+6.In each iteration, print the current value of i.
+
+7.End the program.
 
 
 
@@ -26,16 +26,26 @@ b)	Call the `display(8, 9)` method on the `ad` object
  ```
 /*
 Program to implement a access modifiers using Java
-Developed by: 
-RegisterNumber:  
+Developed by: Dinesh M
+RegisterNumber: 212222040039
+
+import java.util.*;
+public class Main{
+    public static void main(String[] args)
+    {
+        int num;
+        Scanner input=new Scanner(System.in);
+        num=input.nextInt();
+        for(int i=1;i<=num;i++)
+        {
+            System.out.println(i+" ");
+        }
+        
+        
+    }
+}
 */
 ```
-
-## Sourcecode.java:
-
-
-
-
 
 
 
@@ -44,6 +54,8 @@ RegisterNumber:
 
 
 ## RESULT:
-Thus the java program to display the addition number using private modifiers only was executed successfully.
+The program was successfully compiled and executed. It correctly prints all natural numbers from 1 to the user-specified number.
+
+
 
 
