@@ -1,21 +1,27 @@
 # Ex.No:12(C)             JAVA STACK & VECTOR
  ## AIM :
 
-To Write a java program to create vector and read the elements for two vector in java collection.(Use equals method )
+To write a Java program that stores strings in a Vector, displays the entire vector, and prints the first element of the vector.
 ## ALGORITHM :
+1.Start.
 
-1.	Start the Program
-2.	In `main`:
--	a) Create a `Scanner` object to read input.
--	b) Read an integer `n1` (the size of the first vector).
--	c) Initialize `Vector<String> vector1`.
--	d) Use a `for` loop to read `n1` strings and add each to `vector1`.
-3.	Repeat similar steps for a second vector:
-a)	Read an integer `n2` (size of the second vector).
-b)	Initialize `Vector<String> vector2`.
-c)	Use a `for` loop to read `n2` strings and add each to `vector2`.
-4.	Use `equals()` to compare `vector1` and `vector2` and print whether they are equal.
-5.	End.
+2.Create a Scanner object to read input from the user.
+
+3.Create an empty Vector<String>.
+
+4.Read an integer size representing how many pairs of strings to add.
+
+5.Loop from i = 0 to i < size:
+
+6.Read two strings from the user.
+
+7.Add both strings to the vector using .add().
+
+8.Print the entire vector.
+
+9.Retrieve and print the first element of the vector using .firstElement().
+
+10.End.
 
 
 
@@ -23,12 +29,37 @@ c)	Use a `for` loop to read `n2` strings and add each to `vector2`.
  ```
 /*
 Program to implement a JAVA STACK & VECTOR  using Java
-Developed by: 
-RegisterNumber:  
+Developed by: Dinesh M
+RegisterNumber: 212222040039
+
+import java.util.*;
+
+public class VectorDemo {
+	public static void main(String args[])
+	{
+
+		
+		Vector<String> vec_tor = new Vector<String>();
+        Scanner sc=new Scanner(System.in);
+        int size=sc.nextInt();
+	    for(int i=0;i<size;i++)
+	    {
+		vec_tor.add(sc.next());
+	    vec_tor.add(sc.next());
+	    }
+	
+
+		System.out.println("The vector is: " + vec_tor);
+
+	    System.out.println("The first element is: "
+                           + vec_tor.firstElement());
+	}
+}
+
 */
 ```
 
-## Sourcecode.java:
+
 
 
 
@@ -37,12 +68,12 @@ RegisterNumber:
 
 
 ## OUTPUT:
+![Screenshot 2025-05-24 165419](https://github.com/user-attachments/assets/bd81dfde-2f6a-4dd7-a073-4f49431c86c6)
 
 
 
 ## RESULT:
-
-Thus the java program to create vector and read the elements for two vector in java collection.(Use equals method ) was executed successfully.
+The program successfully stored user-input strings in a Vector, displayed all elements, and printed the first element of the vector.
 
 
 
