@@ -1,14 +1,32 @@
 # Ex.No:8(B) IO-FILE READER/WRITER
 ## AIM:
-To create a java program to append a NUMBER in a file “testout.txt” using Writer.
+To write a Java program that reads characters from the console using InputStreamReader until a specific termination character (#) is entered.
 
 
 ## ALGORITHM :
-1.	It creates a file testout.txt, writes "Welcome to Java File Concept -Reader" to it, and displays this initial content.
-2.	It reopens the file in append mode and adds "1234567890" at the end of the existing content.
-3.	It reads the file's content (Welcome to Java File Concept -Reader1234567890) and displays it.
-4.	The file is deleted using file.delete().
-5.	It tries to read the file again, but this throws an exception since the file no longer exists.
+1.Start the program.
+
+2.Declare an InputStreamReader object to read input from System.in.
+
+3.Use a try-finally block to ensure the input stream is properly closed.
+
+4.Inside the try block:
+
+5.Initialize a character variable c.
+
+6.Use a do-while loop to:
+
+7.Read a character from the console.
+
+8.Print the character.
+
+9.Continue until the character # is encountered.
+
+10.In the finally block, close the InputStreamReader if it's not null.
+
+11.End the program.
+
+
 
 
 
@@ -17,12 +35,34 @@ To create a java program to append a NUMBER in a file “testout.txt” using Wr
  ```
 /*
 Program to implement a IO File Reader/Writer using Java
-Developed by: 
-RegisterNumber:  
+Developed by: Dinesh M
+RegisterNumber:  212222040039
+
+import java.io.*;
+public class ReadConsole {
+
+   public static void main(String args[]) throws IOException {
+      InputStreamReader cin = null;
+
+      try {
+         cin = new InputStreamReader(System.in);
+       //  System.out.println("Enter characters, 'q' to quit.");
+         char c;
+         do {
+            c = (char) cin.read();
+            System.out.print(c);
+         } while(c != '#');
+      }finally {
+         if (cin != null) {
+            cin.close();
+         }
+      }
+   }
+}
 */
 ```
 
-## Sourcecode.java:
+
 
 
 
@@ -35,7 +75,7 @@ RegisterNumber:
 
 
 ## RESULT:
-Thus, the java program to append a NUMBER in a file “testout.txt” using Writer.was executed and verified successfully
+The program successfully reads and displays each character typed by the user until the termination character # is entered.
 
 
 
