@@ -1,36 +1,57 @@
 # Ex.No:9(A)          DATA I/O STREAM
 ## AIM:
-To create a Java Program to store a String Value in a file "testout.txt" using Data Output Stream.
+To write a Java program that writes primitive data types (int, double, char) to a file using DataOutputStream.
 
 ## ALGORITHM :
-1.  The program creates testout.txt and initializes FileOutputStream and DataOutputStream. It prompts the user to enter a string, writes it to testout.txt using writeUTF(), and then closes the streams.
-2.	It reopens testout.txt with FileInputStream and DataInputStream, reads the stored string using readUTF(), displays it, and then closes the streams.
-3.	It deletes testout.txt.
-4.	After deletion, it tries to read an integer from testout.txt, which causes an error because the file no longer exists.
-5.	The program catches and displays an IOException message if any file-related error occurs, including the attempt to read after deletion.
+1,Start the program.
+
+2.Create a FileOutputStream object to open or create the file "testout.txt".
+
+3.Wrap the FileOutputStream with a DataOutputStream to write primitive data types.
+
+4.Create a Scanner object to take input from the user.
+
+5.Read an integer, a double, and a character from the user.
+
+6.Use writeInt(), writeDouble(), and writeChar() methods of DataOutputStream to write the data to the file.
+
+7.Close both DataOutputStream and FileOutputStream objects to release resources.
+
+8.Print a success message.
+
+9.End the program.
 
 
 ## PROGRAM:
  ```
 /*
 Program to implement a DATA I/O STREAM using Java
-Developed by: 
-RegisterNumber:  
+Developed by: Dinesh M
+RegisterNumber: 212222040039
+
+FileOutputStream fout=new FileOutputStream("testout.txt");    
+DataOutputStream dout=new DataOutputStream(fout);
+Scanner sc=new Scanner(System.in);
+int num=sc.nextInt();
+double db=sc.nextDouble();
+char ch=sc.next().charAt(0);
+                 dout.writeInt(num);  
+                 dout.writeDouble(db);
+                 dout.writeChar(ch);
+                 dout.close();    
+                 fout.close();
+                 System.out.println("Successfully Completed");  
+                 
 */
 ```
-
-## Sourcecode.java:
-
-
-
-
 
 
 
 ## OUTPUT:
+![Screenshot 2025-05-24 124911](https://github.com/user-attachments/assets/0025ddd2-3f65-46ce-8719-fe7091a2e292)
 
 
 
 ## RESULT:
-Thus the Java Program to store a String Value in a file "testout.txt" using DataOutputStream was executed and verified successfully.
+The program successfully writes an integer, a double, and a character to "testout.txt" in binary format, and displays a completion message.
 
