@@ -1,16 +1,22 @@
 # Ex.No:8(D) BUFFER INPUT/OUTPUT STREAM
 
 ## AIM:
- To create a java program file for displaying the data from the file after skip method using FileInputStream & BufferedInputStream.
+To create a custom filter by extending FilterWriter that replaces all occurrences of the character 'E' with 'A' while writing data.
 
 ## ALGORITHM :
-1.	Import java.io.* and java.util.* for file handling and user input.
-2.	Create a file named sample.txt and write "This is a line of text inside the file." using FileWriter.
-3.	Close the FileWriter to save the content to sample.txt.
-4.	Open sample.txt with a FileInputStream wrapped in a BufferedInputStream for efficient reading.
-5.	Prompt the user to enter the number of bytes to skip using Scanner.
-6.	Skip the specified number of bytes in the file and print the remaining content.
-7.	Close the BufferedInputStream and FileInputStream to release system resources.
+1.Start the program.
+
+2.Define a class CustomFilterWriter that extends FilterWriter.
+
+3.Create a constructor that accepts a Writer object and passes it to the superclass constructor.
+
+4.Override the write(String str) method:
+
+5.Replace all occurrences of 'E' with 'A' in the input string.
+
+6.Write the modified string using the superclass's write() method.
+
+7.End the program.
 
 
 
@@ -19,12 +25,22 @@
  ```
 /*
 Program to implement a Buffer Input/Output Stream using Java
-Developed by: 
-RegisterNumber:  
+Developed by: Dinesh M
+RegisterNumber: 212222040039
+
+    import java.io.*;  
+    class CustomFilterWriter extends FilterWriter {  
+        CustomFilterWriter(Writer out) {  
+            super(out);  
+        }  
+        public void write(String str) throws IOException {  
+            super.write(str.replace('E','A'));  
+        }  
+    }  
+   
 */
 ```
 
-## Sourcecode.java:
 
 
 
@@ -33,10 +49,11 @@ RegisterNumber:
 
 
 ## OUTPUT:
+![Screenshot 2025-05-24 124402](https://github.com/user-attachments/assets/538f6afb-3b33-4bc7-8ce9-e1d4adf2d31f)
 
 
 
 ## RESULT:
-Thus, the java program file for displaying the data from the file after skip method using FileInputStream & BufferedInputStream was executed and done successfully.
+The program successfully filters the output stream by replacing every 'E' character with 'A' before writing the string.
 
 
