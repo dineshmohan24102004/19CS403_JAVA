@@ -4,24 +4,52 @@
 
 
 ## ALGORITHM :
-1.  The user enters a string (data) and an integer (skipnumber) indicating the number of characters to skip.
-2.	The original string is displayed for reference.
-3.	A StringReader object, input, is created to read from data.
-4.	The program skips the specified number of characters (skipnumber) in the string.
-5.	It reads and displays the remaining characters one by one until the end of the string.
-6.	Any exceptions are caught, and stack trace information is generated if an error occurs.
+1.Start the program.
+
+2.Create a byte array with some predefined values.
+
+3.Initialize a ByteArrayInputStream object using the byte array.
+
+4.Print a message indicating the start of the byte reading process.
+
+5.Use a for loop to read each byte from the input stream:
+
+6.Call read() to get the next byte.
+
+7.Print the byte value.
+
+8.Close the ByteArrayInputStream.
+
+9.Handle any exceptions using a try-catch block.
+
+10.End the program.
 
 
 ## PROGRAM:
  ```
 /*
 Program to implement a String Reader using Java
-Developed by: 
-RegisterNumber:  
+Developed by: Dinesh M
+RegisterNumber: 212222040039
+
+import java.io.StringReader; 
+import java.util.*;
+public class StringReaderExample {  
+    public static void main(String[] args) throws Exception 
+    {  
+        Scanner sc=new Scanner(System.in);
+        String srg = sc.nextLine();  
+        StringReader reader = new StringReader(srg);  
+        int k=0; 
+            while((k=reader.read())!=-1){  
+                System.out.print((char)k);  
+            }  
+        }  
+}  
 */
 ```
 
-## Sourcecode.java:
+
 
 
 
@@ -31,11 +59,11 @@ RegisterNumber:
 
 ## OUTPUT:
 
+![Screenshot 2025-05-24 125302](https://github.com/user-attachments/assets/87a029de-47be-4179-bc03-04022e7327ba)
 
 
 ## RESULT:
-Thus the Java Program to display and skip the specified number of characters using the predefined Method Skip in StringReader was executed and verified successfully.
-
+The program successfully reads and prints the bytes from the byte array using ByteArrayInputStream.
 
 
 
