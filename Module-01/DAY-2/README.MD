@@ -65,7 +65,6 @@ public class Demo {
 
 ## OUTPUT:
 
-C:\Users\SEC\Pictures\Screenshots\Screenshot 2025-05-23 201059.png
 
 
 
